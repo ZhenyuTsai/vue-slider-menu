@@ -9,8 +9,8 @@ npm install slider-menu -S
 
 ```js
 import Vue from 'vue'
-import SliderMenu from 'slider-menu'
-import 'slider-menu/lib/slider-menu.css'
+import SliderMenu from 'vue-slider-menu'
+import 'vue-slider-menu/lib/slider-menu.css'
 
 Vue.use(SliderMenu)
 ```
