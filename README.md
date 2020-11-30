@@ -2,7 +2,7 @@
 
 ## Install
 ```
-npm install slider-menu -S
+npm install vue-slider-menu -S
 ```
 
 ## Quick Start
