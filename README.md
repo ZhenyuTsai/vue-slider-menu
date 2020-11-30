@@ -1,5 +1,8 @@
 # vue-slider-menu
 
+## The online Demo
+[DEMO](https://zhenyutsai.github.io/demo/vue-slider-menu/)
+
 ## Install
 ```
 npm install vue-slider-menu -S
