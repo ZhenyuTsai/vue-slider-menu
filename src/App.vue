@@ -1,18 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <slider-menu>
+      <!-- 自定义导航样式插槽 -->
+      <template v-slot:menu="{row}">
+        <div class="slider-menu-nav" :class="{'slider-menu-nav-active': row.current === row.index}">
+          <span>{{row.name}}</span>
+        </div>
+      </template>
+      <slider-menu-item name="标题1"></slider-menu-item>
+      <slider-menu-item name="标题2"></slider-menu-item>
+      <slider-menu-item name="标题3"></slider-menu-item>
+      <slider-menu-item name="标题4"></slider-menu-item>
+      <slider-menu-item name="标题5"></slider-menu-item>
+    </slider-menu>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
@@ -21,8 +28,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
