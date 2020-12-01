@@ -1,7 +1,7 @@
 # vue-slider-menu
 
 ## The online Demo
-[DEMO](https://zhenyutsai.github.io/demo/vue-slider-menu/){:target="_blank"}
+<a href="https://zhenyutsai.github.io/demo/vue-slider-menu/" target="_blank">DEMO</a>
 
 ## Install
 ```
