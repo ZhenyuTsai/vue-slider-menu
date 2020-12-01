@@ -145,7 +145,8 @@ export default {
   border: 1px solid #f0f0f0;
 }
 .slider-info {
-  margin-left: 200px;
+  padding-left: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
