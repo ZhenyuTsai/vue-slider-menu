@@ -1,5 +1,9 @@
 # vue-slider-menu
 
+## Plug in description
+
+> Vue项目中实现导航动态锚点定位。页面滚动的同时对应的导航高亮，点击导航会页面会滚动到对应的内容区域。实现原理是判断所有的子盒子自身的高度和距离页面顶部的距离来判断当前是哪个子盒子显示在页面中。
+
 ## The online Demo
 <a href="https://zhenyutsai.github.io/demo/vue-slider-menu/">DEMO</a>
 
