@@ -6,6 +6,7 @@
   "author": {
     "name": "zhenyutsai"
   },
+  "homepage": "https://github.com/ZhenyuTsai/vue-slider-menu",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
