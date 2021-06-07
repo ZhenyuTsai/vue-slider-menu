@@ -1,7 +1,7 @@
 <template>
   <div class="slider-main">
     <div class="slider-body">
-      <div ref="sliderMenu" class="slider-menu">
+      <div ref="sliderMenu" class="slider-menu" :style="{'--nav-width': navWidth}">
           <div  v-for="(item, index) in data" :key='index' @click="scrollToView(index)">
             <slot name="menu" :row="{...item,current,index}">
               <div class="slider-menu-nav" :class="{'slider-menu-nav-active': current === index}">
@@ -10,7 +10,7 @@
             </slot>
           </div>
       </div>
-      <div class="slider-info">
+      <div class="slider-info" :style="{'--nav-width': navWidth}">
         <slot></slot>
       </div>
     </div>
@@ -19,6 +19,12 @@
 <script>
 export default {
   name: 'SliderMenu',
+  props: {
+    navWidth: {
+      type: String,
+      default: '200px'
+    }
+  },
   data () {
     return {
       current: 0,
@@ -118,7 +124,8 @@ export default {
 .slider-menu {
   position: fixed;
   left: auto;
-  width: 180px;
+  width: var(--nav-width, 180px);
+  z-index: 10;
   overflow: auto;
   color: #000;
   height: auto;
@@ -139,13 +146,8 @@ export default {
 .slider-menu-nav-active {
   border-left: 2px solid #1a73e8;
 }
-.component-info {
-  height: 100px;
-  width: 600px;
-  border: 1px solid #f0f0f0;
-}
 .slider-info {
-  padding-left: 200px;
+  padding-left: var(--nav-width, 180px);
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <slider-menu>
+    <slider-menu navWidth="300px">
       <!-- 自定义导航样式插槽 -->
       <template v-slot:menu="{row}">
         <div class="slider-menu-nav" :class="{'slider-menu-nav-active': row.current === row.index}">
@@ -29,5 +29,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+.slider-menu-item .content{
+  height: 1000px;
+  padding: 20px;
+  border: 1px solid #f0f0f0;
 }
 </style>

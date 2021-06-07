@@ -27,7 +27,7 @@ Vue.use(SliderMenu)
 ```html
 <template>
   <div id="app">
-    <slider-menu>
+    <slider-menu navWidth="300px">
       <!-- 自定义导航样式插槽 -->
       <template v-slot:menu="{row}">
         <div class="slider-menu-nav" :class="{'slider-menu-nav-active': row.current === row.index}">

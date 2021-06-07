@@ -17,12 +17,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.slider-menu-item .content{
-  height: 1000px;
-  width: 800px;
-  padding: 20px;
-  border: 1px solid #f0f0f0;
-}
-</style>
